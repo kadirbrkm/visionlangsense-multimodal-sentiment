@@ -1,24 +1,26 @@
 # 🔍 Multi-Modal Sentiment & Thematic Analysis
 
-Çok-modlu (metin + görsel) duygu ve tematik analiz sistemi. Ürün görseli ve açıklamasından kalite, duygu ve tema çıkarımı yapan gelişmiş bir derin öğrenme projesi.
+An advanced deep learning system for **multimodal (text + image)** sentiment and thematic analysis. This project predicts **product quality, sentiment, and thematic labels** based on product images and descriptions.
 
-## 🌟 Özellikler
+## 🌟 Features
 
-### 🎯 Ana Fonksiyonlar
-- **Duygu Analizi**: 5 sınıflı duygu kategorilendirmesi (Çok Olumsuz → Çok Olumlu)
-- **Tema Sınıflandırması**: Domain-spesifik tema analizi (Moda/Gıda)
-- **Kalite Skorlaması**: 0-1 arası sürekli kalite değerlendirmesi
-- **Model Açıklanabilirliği**: Grad-CAM ile görsel açıklamalar
+### 🎯 Core Functionalities
+- **Sentiment Analysis**: 5-class sentiment classification (Very Negative → Very Positive)
+- **Thematic Classification**: Domain-specific multi-label theme analysis (Fashion / Food)
+- **Quality Scoring**: Continuous product quality estimation between 0 and 1
+- **Model Explainability**: Visual explanations using Grad-CAM
 
-### 🛠️ Teknoloji Stack
-- **Derin Öğrenme**: PyTorch, CLIP, Transformers
-- **Görsel İşleme**: torchvision, OpenCV, Albumentations
-- **Açıklanabilirlik**: Grad-CAM, pytorch-grad-cam
-- **Web Arayüzü**: Streamlit, Plotly
+### 🛠️ Technology Stack
+- **Deep Learning**: PyTorch, CLIP, Transformers
+- **Image Processing**: torchvision, OpenCV, Albumentations
+- **Explainability**: Grad-CAM, pytorch-grad-cam
+- **Web Interface**: Streamlit, Plotly
 - **Experiment Tracking**: Weights & Biases
-- **Veri**: Kaggle datasets, pandas
+- **Data**: Kaggle datasets, pandas
 
-## 🏗️ Proje Yapısı
+## 🏗️ Project Structure
+
+
 
 ```
 multimodal-sentiment-analysis/
@@ -283,13 +285,3 @@ Bu proje MIT lisansı altında dağıtılmaktadır. Detaylar için `LICENSE` dos
 - [Grad-CAM: Visual Explanations from Deep Networks](https://arxiv.org/abs/1610.02391)
 - [Multi-Modal Sentiment Analysis](https://arxiv.org/abs/2103.14887)
 
-## 📞 İletişim
-
-Sorularınız veya geri bildirimleriniz için:
-- GitHub Issues açın
-- Pull Request gönderin
-- Proje maintainer'ları ile iletişime geçin
-
----
-
-**🎉 Mutlu kodlamalar!** Bu proje ile multi-modal derin öğrenme dünyasını keşfedin ve kendi uygulamalarınızı geliştirin.
