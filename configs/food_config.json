@@ -1,0 +1,34 @@
+{
+  "clip_model_name": "openai/clip-vit-base-patch32",
+  "hidden_dim": 512,
+  "dropout_rate": 0.1,
+  "num_sentiment_classes": 5,
+  "num_theme_classes": 6,
+  
+  "epochs": 100,
+  "batch_size": 32,
+  "learning_rate": 1e-4,
+  "clip_learning_rate": 1e-5,
+  "head_learning_rate": 1e-4,
+  "weight_decay": 1e-5,
+  "optimizer": "adamw",
+  "scheduler": "cosine",
+  
+  "sentiment_weight": 1.0,
+  "theme_weight": 1.0,
+  "quality_weight": 0.5,
+  
+  "use_amp": true,
+  "num_workers": 4,
+  "pin_memory": true,
+  
+  "domain": "food",
+  "data_dir": "data/food",
+  
+  "experiment_name": "food_multimodal_sentiment",
+  "use_wandb": true,
+  "wandb_project": "multimodal-sentiment-analysis",
+  
+  "checkpoint_dir": "checkpoints/food_sentiment_analysis",
+  "save_every": 10
+}
